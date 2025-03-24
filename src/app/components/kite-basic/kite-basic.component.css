@@ -1,0 +1,69 @@
+
+
+.nav-container-right-arrow {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: fixed;
+  top: 44%;
+  left: 1230px;
+  transform: translateX(-50%);
+  background:05150e;
+  width: max-content;
+  z-index: 1000; /* Keeps the arrow above other elements */
+
+}
+
+/* Right Arrow Styling */
+.nav-arrow {
+  font-size: 3rem;
+  color: #0ff;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.nav-arrow:hover {
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+
+
+
+
+
+.nav-container-left-arrow {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: fixed;
+  top: 44%;
+  left: 36px;
+  transform: translateX(-50%);
+  background:05150e;
+  width: max-content;
+  z-index: 1000; /* Keeps the arrow above other elements */
+
+}
+
+/* Right Arrow Styling */
+.nav-arrow {
+  font-size: 3rem;
+  color: #0ff;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.nav-arrow:hover {
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.dashboard-card-orders {
+  padding:225px;
+  margin: 10px;
+}
+
+mat-grid-list {
+  width: 200%;
+}

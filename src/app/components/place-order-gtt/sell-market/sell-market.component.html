@@ -1,0 +1,23 @@
+<div class="card">
+    <h2>Market</h2>
+    
+    <!-- Input Box for Trading Symbol -->
+    <input 
+    type="text" 
+    [(ngModel)]="tradingSymbol" 
+    placeholder="Enter the Stock"
+    (input)="tradingSymbol = tradingSymbol.toUpperCase()"
+  />
+  
+    <!-- Submit Button -->
+    <button (click)="submitSymbol()">Sell</button>
+  
+    <!-- Display List of Entered Symbols -->
+    <div *ngIf="enteredSymbols.length > 0">
+      <h3>Stocks being monitored</h3>
+      <ul>
+        <li *ngFor="let symbol of enteredSymbols">{{ symbol }}</li>
+      </ul>
+    </div>
+  </div>
+  

@@ -1,0 +1,65 @@
+
+
+<div class="nav-container"><a routerLink="/gtt" class="nav-arrow right-arrow" title="GTT">
+  &#8594; <!-- Right Arrow -->
+</a>
+</div>
+
+  
+  <div class="profile-container" *ngIf="profileData; else loading">
+    <mat-toolbar color="primary" [@fadeIn]>
+      <span>📊 Kite Profile</span>
+    </mat-toolbar>>
+    <mat-card [@fadeIn]>
+      <mat-card-header>
+        <mat-card-title>{{ profileData.user_name }}</mat-card-title>
+        <mat-card-subtitle>{{ profileData.user_id }} ({{ profileData.user_shortname }})</mat-card-subtitle>
+      </mat-card-header>
+  
+      <mat-card-content>
+        <p><strong>Email:</strong> {{ profileData.email }}</p>
+        <p><strong>Account Type:</strong> {{ profileData.user_type }}</p>
+        <p><strong>Broker:</strong> {{ profileData.broker }}</p>
+      </mat-card-content>
+    </mat-card>
+  
+    <mat-card [@slideIn]>
+      <mat-card-title>Exchanges</mat-card-title>
+      <mat-list>
+        <mat-list-item *ngFor="let exchange of profileData.exchanges">
+          📈 {{ exchange }}
+        </mat-list-item>
+      </mat-list>
+    </mat-card>
+  
+    <mat-card [@slideIn]>
+      <mat-card-title>Products</mat-card-title>
+      <mat-list>
+        <mat-list-item *ngFor="let product of profileData.products">
+          🏦 {{ product }}
+        </mat-list-item>
+      </mat-list>
+    </mat-card>
+  
+    <mat-card [@slideIn]>
+      <mat-card-title>Order Types</mat-card-title>
+      <mat-list>
+        <mat-list-item *ngFor="let order of profileData.order_types">
+          🛒 {{ order }}
+        </mat-list-item>
+      </mat-list>
+    </mat-card>
+  
+    <mat-card [@slideIn]>
+      <mat-card-title>Meta Info</mat-card-title>
+      <p><strong>Demat Consent:</strong> {{ profileData.meta.demat_consent }}</p>
+    </mat-card>
+  </div>
+  
+  <ng-template #loading>
+    <div class="loading-container">
+      <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+      <p>Loading profile...</p>
+    </div>
+  </ng-template>
+  

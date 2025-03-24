@@ -1,0 +1,57 @@
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007bff; /* Blue color like stock market apps */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  h3 {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #f8f9fa;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  

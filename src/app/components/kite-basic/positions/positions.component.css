@@ -1,0 +1,61 @@
+/* .container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  .positive {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .negative {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .mat-dialog-container {
+    min-width: 400px;
+  }
+   */
+   .container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.orders-card {
+  width: 100%;
+  max-width: 1000px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.full-width-table {
+  width: 100%;
+}
+.positive {
+  color: green;
+  font-weight: bold;
+}
+
+.negative {
+  color: red;
+  font-weight: bold;
+}
+
+
+.exit-btn {
+  color: red;
+}
+
+.disabled-btn {
+  color: gray;
+  pointer-events: none;
+  opacity: 0.5;
+}

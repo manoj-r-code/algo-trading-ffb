@@ -1,0 +1,91 @@
+.project-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center vertically */
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    overflow: hidden;
+    background: black;
+  }
+  
+  .project-title p {
+    position: relative;
+    animation: glitch 1.5s infinite alternate;
+  }
+  
+  /* Glitch Effect */
+  @keyframes glitch {
+    0% {
+      text-shadow: 2px 2px #ff0000, -2px -2px #00ff00;
+    }
+    25% {
+      text-shadow: -2px -2px #ff0000, 2px 2px #00ff00;
+    }
+    50% {
+      text-shadow: 2px -2px #ff0000, -2px 2px #00ff00;
+    }
+    75% {
+      text-shadow: -2px 2px #ff0000, 2px -2px #00ff00;
+    }
+    100% {
+      text-shadow: 2px 2px #ff0000, -2px -2px #00ff00;
+    }
+  }
+  
+  /* Neon Glow Effect */
+  .project-title p::before {
+    content: "Project-Z";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+    z-index: -1;
+    animation: neonGlow 1.5s infinite alternate;
+  }
+  
+  @keyframes neonGlow {
+    from {
+      opacity: 0.6;
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+    to {
+      opacity: 1;
+      text-shadow: 0 0 15px #0ff, 0 0 30px #0ff, 0 0 50px #0ff;
+    }
+  }
+  
+  /* design for the navigation is below*/
+/* Navigation container - Centering the single arrow */
+.nav-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: fixed;
+  top: 44%;
+  left: 1250px;
+  transform: translateX(-50%);
+  background: black;
+  width: max-content;
+}
+
+/* Right Arrow Styling */
+.nav-arrow {
+  font-size: 3rem;
+  color: #0ff;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.nav-arrow:hover {
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}

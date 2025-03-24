@@ -1,0 +1,55 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 2fr)); 
+    gap: 5px;
+    justify-content: center;
+    padding: 14px;
+  }
+  
+  .card {
+    padding: 25px;
+    padding-left: 130px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #013b29;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+
+
+
+
+
+  .nav-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: fixed;
+    top: 44%;
+    left: 36px;
+    transform: translateX(-50%);
+    background:05150e;
+    width: max-content;
+    z-index: 1000; /* Keeps the arrow above other elements */
+
+  }
+  
+  /* Right Arrow Styling */
+  .nav-arrow {
+    font-size: 3rem;
+    color: #0ff;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+  }
+  
+  .nav-arrow:hover {
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  }
+  
